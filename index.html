@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Ленина сказка — торты на заказ, Иваново</title>
+<meta name="description" content="Конструктор тортов «Ленина сказка», Иваново: выберите начинку, дизайн и вес — стоимость считается сразу.">
+<meta name="theme-color" content="#fbf6ec">
+<style>
+:root{
+  --bg:#fbf6ec;
+  --bg-2:#f6eedd;
+  --surface:#ffffff;
+  --surface-2:#fffbf2;
+  --line:#efe5d3;
+  --line-2:#e3d5bb;
+  --text:#3b2e22;
+  --muted:#7a6957;
+  --dim:#a4937f;
+  --accent:#f2c94c;
+  --accent-2:#f7dc8a;
+  --accent-ink:#9a6a0e;
+  --accent-soft:#fdf1c7;
+  --glow:rgba(242,201,76,.45);
+  --ok:#2f8a57;
+  --shadow:0 18px 40px -22px rgba(120,86,30,.35);
+  --radius:20px;
+  --gutter:16px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;overflow-x:hidden}
+body{margin:0;min-width:0;overflow-x:hidden;background:var(--bg);color:var(--text);
+  font:400 16px/1.55 Montserrat,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer;-webkit-tap-highlight-color:transparent}
+a{color:inherit}
+h1,h2,h3{font-family:Montserrat,system-ui,sans-serif;font-weight:800;letter-spacing:-.02em;margin:0;line-height:1.15}
+p{margin:0}
+
+.ambient{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.ambient::before,.ambient::after{content:"";position:absolute;border-radius:50%;filter:blur(70px);opacity:.8}
+.ambient::before{width:560px;height:560px;left:50%;top:-260px;transform:translateX(-50%);background:radial-gradient(circle,rgba(247,220,138,.75),transparent 65%)}
+.ambient::after{width:440px;height:440px;right:-200px;top:55%;background:radial-gradient(circle,rgba(250,214,200,.6),transparent 65%)}
+.wrap{position:relative;z-index:1;width:100%;max-width:1120px;margin:0 auto;padding:0 var(--gutter)}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(251,246,236,.82);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:60px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Montserrat,system-ui,sans-serif;font-weight:700;font-size:17px;text-decoration:none;min-width:0}
+.logo-mark{flex:none;width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(140deg,#f8de8c,#eeb93a);box-shadow:0 6px 16px -6px rgba(200,140,20,.6)}
+.logo-mark svg{width:17px;height:17px;stroke:#5a3d0c}
+.logo-text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.logo-text small{font-family:Montserrat,sans-serif;font-weight:600;font-size:12px;color:var(--muted);margin-left:6px}
+.top-cta{flex:none;padding:9px 14px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);font-size:13px;font-weight:700;text-decoration:none;transition:border-color .2s,background .2s}
+.top-cta:hover{border-color:var(--accent);background:var(--accent-soft)}
+
+/* hero */
+.hero{padding:52px 0 24px;text-align:center}
+.promo{display:inline-flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 10px;max-width:100%;padding:12px 20px;line-height:1.35;text-align:center;border-radius:999px;
+  font-weight:800;font-size:14px;letter-spacing:.03em;color:#5a3d0c;
+  background:linear-gradient(135deg,#fff3c4,#f9df8f);border:1px solid #efc85a;
+  box-shadow:0 0 0 4px rgba(242,201,76,.18),0 0 26px rgba(242,201,76,.55)}
+.hero h1{margin:22px auto 0;max-width:820px;font-size:clamp(30px,8vw,60px)}
+.hero h1 em{font-style:normal;color:var(--accent-ink)}
+.hero h1 .city{display:block;margin-top:8px;font-family:Montserrat,sans-serif;font-size:.36em;color:var(--muted);font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.hero-sub{margin:16px auto 0;max-width:560px;color:var(--muted);font-size:clamp(15px,3.8vw,17px)}
+.hero-go{display:inline-flex;align-items:center;gap:8px;margin-top:24px;padding:13px 22px;border-radius:14px;background:var(--surface);border:1px solid var(--line-2);box-shadow:var(--shadow);font-weight:700;font-size:15px;text-decoration:none;transition:border-color .2s}
+.hero-go:hover{border-color:var(--accent)}
+.hero-go svg{width:18px;height:18px}
+
+/* sections */
+.sec{padding:40px 0 56px}
+.sec-head{text-align:center;margin-bottom:26px}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink)}
+.sec-head h2{margin-top:10px;font-size:clamp(26px,6.4vw,40px)}
+.sec-head p{margin:10px auto 0;max-width:600px;color:var(--muted);font-size:15px}
+
+/* builder */
+.builder{position:relative;border-radius:28px;padding:1px;background:linear-gradient(160deg,#f3d27a,#efe5d3 35%,#efe5d3 70%,#f3d27a);box-shadow:0 30px 70px -36px rgba(150,100,20,.45)}
+.builder-in{border-radius:27px;background:linear-gradient(180deg,#fffdf8,#fff9ee);padding:28px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,340px);gap:28px}
+.step + .step{margin-top:28px}
+.step-title{display:flex;align-items:center;gap:10px;font-weight:800;font-size:15px;margin-bottom:14px}
+.step-num{flex:none;width:24px;height:24px;border-radius:8px;display:grid;place-items:center;font-size:12px;background:var(--accent-soft);color:var(--accent-ink);border:1px solid #efd27e}
+.step-hint{margin:-6px 0 12px;font-size:12.5px;color:var(--muted);line-height:1.4}
+
+.opts{display:grid;gap:10px}
+#fillings{grid-template-columns:repeat(5,minmax(0,1fr))}
+#designs{grid-template-columns:repeat(5,minmax(0,1fr))}
+.opt{position:relative;text-align:left;padding:10px;border-radius:16px;background:var(--surface);border:1px solid var(--line);
+  transition:border-color .25s,background .25s,box-shadow .25s,transform .15s;display:flex;flex-direction:column;gap:9px;min-width:0}
+.opt:hover{border-color:var(--line-2);box-shadow:var(--shadow)}
+.opt:active{transform:scale(.98)}
+.opt[aria-checked="true"]{border-color:var(--accent);background:linear-gradient(160deg,#fff7da,#fffdf6);box-shadow:0 0 0 1px var(--accent) inset,0 10px 26px -12px rgba(220,160,30,.6)}
+.opt:focus-visible{outline:2px solid var(--accent-ink);outline-offset:2px}
+.opt-name{font-weight:700;font-size:13.5px;line-height:1.25;overflow-wrap:anywhere}
+.opt-meta{font-size:12.5px;color:var(--muted)}
+.opt-check{position:absolute;top:8px;right:8px;width:20px;height:20px;border-radius:50%;border:1.5px solid #d9c9aa;background:rgba(255,255,255,.85);display:grid;place-items:center;transition:.2s}
+.opt[aria-checked="true"] .opt-check{background:var(--accent);border-color:#e0b232;box-shadow:0 0 10px var(--glow)}
+.opt-check svg{width:10px;height:10px;opacity:0;transition:.2s;stroke:#5a3d0c}
+.opt[aria-checked="true"] .opt-check svg{opacity:1}
+.slice{width:100%;aspect-ratio:1/1;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:18% 12%;
+  background:radial-gradient(120% 90% at 50% 0%,#fffaf0,#f3e8d2)}
+.slice-wrap{position:relative;display:block;width:100%}
+.slice-photo{position:absolute;inset:0;width:100%;height:100%;border-radius:12px;object-fit:cover;background:#f3e8d2}
+.slice i{display:block;flex:1;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.04)}
+.slice i.thin{flex:.45}
+.opt-thumb{width:100%;aspect-ratio:1/1;height:auto;border-radius:12px;object-fit:cover;background:#f3e8d2}
+.opt-own{width:100%;aspect-ratio:1/1;border-radius:12px;display:grid;place-items:center;background:var(--accent-soft);border:1px dashed #e6c25c}
+.opt-own svg{width:34%;height:34%}
+
+.detail{margin-top:12px;padding:14px 16px;border-radius:16px;background:#fff8e3;border:1px solid #f1dd9e;transition:opacity .3s ease,transform .3s ease}
+.detail.swap{opacity:0;transform:translateY(6px)}
+.detail h3{font-size:18px}
+.detail-sub{margin-top:4px;font-size:13px;color:var(--accent-ink);font-weight:800}
+.layers{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:7px}
+.layers li{position:relative;padding-left:20px;font-size:14px;color:var(--text);line-height:1.4}
+.layers li::before{content:"";position:absolute;left:2px;top:.45em;width:9px;height:9px;border-radius:3px;background:var(--dot,var(--accent));border:1px solid rgba(0,0,0,.08)}
+
+/* range */
+.weight-box{padding:18px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.weight-val{font-family:Montserrat,system-ui,sans-serif;font-size:30px;font-weight:700}
+.weight-val small{font-family:Montserrat,sans-serif;font-size:15px;color:var(--muted);font-weight:600;margin-left:4px}
+.range{-webkit-appearance:none;appearance:none;width:100%;height:28px;margin:14px 0 4px;background:transparent;--p:0%}
+.range:focus{outline:none}
+.range::-webkit-slider-runnable-track{height:6px;border-radius:99px;background:linear-gradient(90deg,var(--accent) var(--p),#eee3cf var(--p))}
+.range::-moz-range-track{height:6px;border-radius:99px;background:#eee3cf}
+.range::-moz-range-progress{height:6px;border-radius:99px;background:var(--accent)}
+.range::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;margin-top:-10px;border-radius:50%;background:#fff;border:6px solid var(--accent);box-shadow:0 0 0 6px rgba(242,201,76,.2),0 4px 12px rgba(160,110,20,.35);transition:transform .15s}
+.range::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:#fff;border:6px solid var(--accent);box-shadow:0 0 0 6px rgba(242,201,76,.2)}
+.range:active::-webkit-slider-thumb{transform:scale(1.12)}
+.range:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 8px rgba(242,201,76,.35)}
+.ticks{display:flex;justify-content:space-between;font-size:12px;color:var(--dim);padding:0 4px}
+
+/* summary */
+.summary{position:sticky;top:84px;align-self:start;border-radius:22px;padding:22px;background:radial-gradient(120% 80% at 50% 0%,#fff3c6,#fffdf7 65%);border:1px solid #f0d98f;box-shadow:var(--shadow)}
+.sum-label{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.total{margin-top:8px;font-family:Montserrat,system-ui,sans-serif;font-weight:700;font-size:clamp(34px,10vw,46px);line-height:1;white-space:nowrap;color:var(--text);font-variant-numeric:tabular-nums lining-nums}
+.total small{font-family:Montserrat,sans-serif;font-size:.36em;font-weight:700;color:var(--muted);margin-right:6px}
+.total span{color:var(--accent-ink);font-size:.6em;margin-left:4px}
+.lines{list-style:none;margin:18px 0 0;padding:16px 0 0;border-top:1px dashed var(--line-2);display:grid;gap:10px}
+.lines li{display:flex;justify-content:space-between;gap:12px;font-size:14px;color:var(--muted)}
+.lines li span:first-child{min-width:0;overflow-wrap:anywhere}
+.lines li span:last-child{color:var(--text);font-weight:700;text-align:right;white-space:nowrap}
+.lines li.free span:last-child{color:var(--ok)}
+.formula{margin-top:14px;padding:10px 12px;border-radius:12px;background:#f8f0de;font-size:12px;color:var(--muted);line-height:1.45;overflow-wrap:anywhere}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:18px;padding:15px 16px;border:0;border-radius:14px;
+  background:linear-gradient(135deg,#fbe28f,#f2c94c 55%,#e9b631);color:#3e2a08;font-weight:800;font-size:15px;line-height:1.3;text-align:center;text-decoration:none;
+  box-shadow:0 12px 26px -12px rgba(200,140,20,.75),0 0 0 1px rgba(255,255,255,.6) inset;transition:transform .15s,box-shadow .25s}
+.btn:hover{box-shadow:0 16px 34px -12px rgba(200,140,20,.9),0 0 0 1px rgba(255,255,255,.7) inset}
+.btn:active{transform:translateY(1px) scale(.99)}
+.note{margin-top:12px;font-size:12px;color:var(--muted);text-align:center;line-height:1.45}
+.toast{margin-top:10px;font-size:13px;color:var(--ok);font-weight:700;text-align:center;min-height:1.2em}
+
+/* delivery */
+.delivery{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:16px;border-radius:24px;padding:16px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow)}
+.map{position:relative;min-height:340px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#f3e8d2}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:sepia(.18) saturate(.9)}
+.map-badge{position:absolute;left:12px;top:12px;padding:8px 12px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.04em;color:#5a3d0c;background:#fff3c4;border:1px solid #efc85a;box-shadow:0 6px 18px -6px rgba(200,140,20,.6);pointer-events:none}
+.addr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-content:start;padding:6px}
+.addr-head{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:4px}
+.addr-title{font-family:Montserrat,system-ui,sans-serif;font-weight:700;font-size:19px}
+.free-chip{flex:none;padding:5px 10px;border-radius:999px;font-size:12px;font-weight:800;color:var(--ok);background:#e8f5ec;border:1px solid #b9dfc6}
+.fld{display:flex;flex-direction:column;gap:6px;min-width:0}
+.fld span{font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.02em}
+.fld input{width:100%;min-width:0;padding:13px 14px;border-radius:12px;border:1px solid var(--line-2);background:#fffdf8;font-size:16px;outline:none;transition:border-color .2s,box-shadow .2s}
+.fld input::placeholder{color:#bcae98}
+.fld input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(242,201,76,.3)}
+.fld input[type="date"]{color-scheme:light;-webkit-appearance:none;appearance:none;min-height:50px;display:block;text-align:left}
+.fld input[type="date"]::-webkit-date-and-time-value{text-align:left}
+.fld input[type="date"]::-webkit-calendar-picker-indicator{cursor:pointer;opacity:.7}
+.fld-wide{grid-column:1/-1}
+.addr .btn{margin-top:8px}
+.addr .note{margin-top:0}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;max-width:820px;margin:0 auto;padding:22px;border-radius:22px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);text-align:center}
+.about p{color:var(--text);font-size:15px}
+.dirs{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.dirs span{padding:6px 12px;border-radius:999px;background:var(--accent-soft);border:1px solid #f0d98f;font-size:13px;color:#6b4a10;font-weight:600}
+
+/* catalog */
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:20px}
+.chip{padding:8px 14px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);font-size:13px;font-weight:700;color:var(--muted);transition:.2s}
+.chip[aria-pressed="true"]{color:#3e2a08;border-color:#e6bf4f;background:linear-gradient(135deg,#fff1bd,#f8db84);box-shadow:0 6px 16px -8px rgba(200,140,20,.7)}
+.chip b{font-weight:700;color:var(--dim);margin-left:4px}
+.chip[aria-pressed="true"] b{color:var(--accent-ink)}
+.cat{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.cat-card{display:flex;flex-direction:column;border-radius:var(--radius);overflow:hidden;background:var(--surface);border:1px solid var(--line);box-shadow:0 10px 30px -24px rgba(120,86,30,.5);transition:border-color .3s,transform .3s,box-shadow .3s}
+.cat-card:hover{border-color:#efd27e;transform:translateY(-2px);box-shadow:var(--shadow)}
+.cat-card[hidden]{display:none}
+.cat-card img{width:100%;aspect-ratio:4/5;height:auto;object-fit:cover;background:#f3e8d2}
+.cat-body{display:flex;flex-direction:column;flex:1;padding:14px 16px 16px}
+.cat-tag{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink)}
+.cat-body h3{margin-top:6px;font-size:16px;line-height:1.25;overflow-wrap:anywhere}
+.cat-price{margin-top:6px;font-size:15px;font-weight:800}
+.cat-price small{font-size:12px;font-weight:600;color:var(--muted)}
+.facts{list-style:none;margin:10px 0 14px;padding:0;display:grid;gap:5px}
+.facts li{position:relative;padding-left:14px;font-size:13px;color:var(--muted);line-height:1.4}
+.facts li::before{content:"";position:absolute;left:0;top:.55em;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+.cat-actions{margin-top:auto;display:grid;gap:8px}
+.cat-btn{display:block;text-align:center;padding:10px 12px;border-radius:12px;border:1px solid #ecc95f;background:linear-gradient(135deg,#fff4cc,#fbe39a);color:#3e2a08;font-weight:700;font-size:13.5px;text-decoration:none;transition:box-shadow .2s}
+.cat-btn:hover{box-shadow:0 8px 18px -10px rgba(200,140,20,.8)}
+.cat-btn.ghost{border-color:var(--line-2);background:transparent;color:var(--muted)}
+.cat-more{margin-top:22px;text-align:center;font-size:14px;color:var(--muted)}
+.cat-more a{color:var(--accent-ink);font-weight:700}
+
+/* footer */
+footer{position:relative;z-index:1;border-top:1px solid var(--line);margin-top:16px;padding:28px 0 calc(28px + env(safe-area-inset-bottom));background:var(--bg-2)}
+.foot-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:13px;color:var(--muted)}
+.foot-row a{text-decoration:none;border-bottom:1px solid var(--line-2)}
+
+.emo{display:flex;align-items:center;justify-content:center;width:100%;aspect-ratio:1/1;border-radius:12px;font-size:44px;line-height:1;background:radial-gradient(120% 90% at 50% 0%,#fffaf0,#f3e8d2)}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+
+@media (max-width:900px){
+  .builder-in{grid-template-columns:minmax(0,1fr);padding:22px}
+  .summary{position:relative;top:0}
+  .delivery{grid-template-columns:minmax(0,1fr)}
+  .map{min-height:260px}
+  .cat{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:700px){
+  #fillings,#designs{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .cat{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+}
+@media (max-width:620px){
+  .hero{padding:36px 0 16px}
+  .sec{padding:32px 0 44px}
+  .opts{gap:8px}
+  .opt{padding:8px;gap:8px}
+  .opt-name{font-size:12.5px}
+  .opt-meta{font-size:11.5px}
+  .cat-body{padding:12px}
+  .cat-body h3{font-size:14.5px}
+  .facts li{font-size:12.5px}
+  .cat-btn{font-size:12.5px;padding:9px 8px}
+}
+@media (max-width:400px){
+  .builder{border-radius:22px}
+  .builder-in{border-radius:21px;padding:14px}
+  .summary{padding:18px}
+  .weight-box{padding:14px}
+  .weight-val{font-size:26px}
+  .top-cta{padding:8px 12px;font-size:12px}
+  .logo-text small{display:none}
+  .logo{font-size:15px;gap:8px}
+  .promo{font-size:12px;padding:10px 14px;letter-spacing:.01em}
+  .opt-check{width:18px;height:18px;top:6px;right:6px}
+  .delivery{padding:10px;border-radius:20px}
+  .addr{padding:4px;gap:8px}
+  .map{min-height:220px}
+  .about{padding:16px}
+}
+@media (max-width:340px){
+  :root{--gutter:12px}
+  .logo{font-size:14px}
+  .logo-mark{width:28px;height:28px}
+  .top-cta{padding:7px 10px}
+  .builder-in{padding:12px}
+  #fillings,#designs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat{grid-template-columns:minmax(0,1fr)}
+  .btn{font-size:14px;padding:14px 12px}
+}
+</style>
+</head>
+<body>
+<div class="ambient" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Ленина сказка — наверх">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#5a3d0c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M5 21v-6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6"/><path d="M5 17c1.5 1 3 1 4.5 0s3-1 4.5 0 3 1 5 0"/><path d="M12 13V9M12 6.5c.8-.8.8-1.7 0-2.5-.8.8-.8 1.7 0 2.5Z"/></svg></span>
+      <span class="logo-text">Ленина сказка<small>Иваново</small></span>
+    </a>
+    <a class="top-cta" href="#builder">Собрать торт</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <span class="promo"><span>🎂 Индивидуальные торты от Елены</span><span aria-hidden="true">|</span><span>🔥 БЕСПЛАТНАЯ ДОСТАВКА ПО ИВАНОВУ</span></span>
+    <h1>Конструктор тортов <em>Ленина&nbsp;сказка</em><span class="city">Иваново</span></h1>
+    <p class="hero-sub">Соберите свой идеальный домашний торт от Елены за 30 секунд</p>
+    <a class="hero-go" href="#builder">Начать сборку
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+  </section>
+
+  <section class="sec wrap" id="builder" aria-labelledby="builder-h">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Конструктор</div>
+      <h2 id="builder-h">Ваш торт — ваша цена</h2>
+    </div>
+
+    <div class="builder">
+      <div class="builder-in" style="display:block">
+        <div id="cake-calc"></div>
+        <p class="note">Цена 1 700 ₽ указана в группе Елены без учёта декора. Параметры заказа скопируются — просто вставьте их в сообщение.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="delivery" aria-labelledby="dl-h">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Доставка</div>
+      <h2 id="dl-h">Привезём по Иваново — бесплатно</h2>
+    </div>
+    <div class="delivery reveal">
+      <div class="map">
+        <iframe title="Карта Иваново" src="https://yandex.ru/map-widget/v1/?ll=40.973930%2C56.999468&amp;z=12" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <span class="map-badge">🔥 Доставка бесплатная</span>
+      </div>
+      <form class="addr" id="addrForm" autocomplete="on" onsubmit="return false">
+        <div class="addr-head">
+          <div class="addr-title">Когда и куда привезти</div>
+          <span class="free-chip">0 ₽</span>
+        </div>
+        <label class="fld fld-wide"><span>К какому числу нужен торт</span><input type="date" name="date" id="orderDate"></label>
+        <label class="fld fld-wide"><span>Улица</span><input name="street" autocomplete="address-line1" placeholder="Например, ул. Ленина" enterkeyhint="next"></label>
+        <label class="fld"><span>Дом</span><input name="house" placeholder="12к1" enterkeyhint="next"></label>
+        <label class="fld"><span>Квартира</span><input name="flat" inputmode="numeric" placeholder="45" enterkeyhint="next"></label>
+        <label class="fld"><span>Подъезд</span><input name="entrance" inputmode="numeric" placeholder="2" enterkeyhint="next"></label>
+        <label class="fld"><span>Домофон</span><input name="intercom" placeholder="45В" enterkeyhint="done"></label>
+        <a class="btn fld-wide js-order" href="#" target="_blank" rel="noopener">👉 Обсудить заказ с Еленой в ВК</a>
+        <div class="toast js-toast fld-wide" role="status"></div>
+        <p class="note fld-wide">Дата и адрес никуда не отправляются — они просто добавятся в текст заказа, который вы вставите в сообщение Елене.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="menu" aria-labelledby="menu-h">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Каталог и услуги</div>
+      <h2 id="menu-h">Всё от «Ленина сказка»</h2>
+    </div>
+    <div class="about reveal">
+      <p>Елена Струкова — основатель кондитерской и мастерской съедобных букетов «Ленина сказка». Десерты из натуральных ингредиентов, кулинарные мастер-классы для детей и взрослых, брендированные леденцы и подарочные боксы.</p>
+      <div class="dirs"><span>Торты и бенто</span><span>Торты-открытки</span><span>Капкейки и трайфлы</span><span>Зефир и птичье молоко</span><span>Пряники и пряничные домики</span><span>Леденцы</span><span>Мастер-классы</span></div>
+    </div>
+    <div style="height:24px"></div>
+    <div class="chips" id="chips" role="group" aria-label="Фильтр каталога"></div>
+    <div class="cat" id="catalog"></div>
+    <p class="cat-more">Здесь — товары из открытой части витрины. Весь каталог — <a id="marketLink" href="#" target="_blank" rel="noopener">в группе ВКонтакте</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-row"><span>Ленина сказка · Иваново</span><a id="vkFoot" href="#" target="_blank" rel="noopener">Группа ВКонтакте</a></div>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script>
+(function(){
+  // ---- Данные: группа «Торт на заказ. Иваново. Бенто. Мастер-классы.» (vk.ru/club215400490), 08.11.2026 ----
+  var VK_URL = 'https://vk.ru/club215400490';
+  var MARKET_URL = 'https://vk.ru/market-215400490?screen=group';
+  var PRODUCT = function(id){ return 'https://vk.ru/market/product/' + id; };
+  var CATS = {cake:'Торты', dessert:'Бенто и десерты', gift:'Букеты и пряники', mk:'Мастер-классы'};
+  var MKP = 'Мастер-класс по росписи пряников ';
+  var ITEMS = [
+    {id:'tort-edinorog', cat:'cake', name:'Торт с единорогом', price:1700, unit:'без учёта декора', vk:'tort-s-edinorogom-215400490-10746112', facts:['Пряничная цифра','Шоколадная фигурка единорога','Шоколадные шары, безе'], design:0},
+    {id:'tort-mishka', cat:'cake', name:'Торт с мишкой', price:1700, unit:'без учёта декора', vk:'tort-s-mishkoy-215400490-10746118', facts:['Пряничная цифра','Шоколадная фигурка мишки','Посыпка в форме шариков'], design:1},
+    {id:'tort-garri-poter', cat:'cake', name:'Гарри Потер', price:1700, unit:'без учёта декора', vk:'garri-poter-215400490-10746146', facts:['Снитч и палочка из тёмного пластичного шоколада и тёмного шоколада'], design:2},
+    {id:'tort-malenkiy-prints', cat:'cake', name:'Маленький принц', price:1700, unit:'без учёта декора', vk:'malenkiy-prints-215400490-10746134', facts:['Пряничный декор с ручной росписью'], design:3},
+    {id:'bento', cat:'dessert', name:'Бенто-торт', price:1600, vk:'bento-tort-215400490-11523119', facts:['Вес 450–500 г','В коробочке, с ложкой и свечкой','5 начинок на выбор']},
+    {id:'kapkeyki', cat:'dessert', name:'Капкейки', price:180, vk:'kapkeyki-215400490-9484970', facts:['5 начинок на выбор','Коробки с атласной лентой на 1–12 шт','Упаковка оплачивается отдельно']},
+    {id:'trayfly', cat:'dessert', name:'Трайфлы', price:220, vk:'trayfly-215400490-9848148', facts:['5 начинок на выбор','Коробки с атласной лентой на 1–12 шт','Упаковка оплачивается отдельно']},
+    {id:'buket-s', cat:'gift', name:'Букет из сухофруктов, размер S', price:1500, vk:'buket-iz-sukhofruktov-razmer-s-215400490-13272327', facts:['Манго, грецкий орех, курага 3-х видов, чернослив, киви, вишня, хурма, инжир, финики','Тематический топер в подарок']},
+    {id:'buket-25', cat:'gift', name:'Букет из сухофруктов', price:3000, vk:'buket-iz-sukhofruktov-215400490-13255890', facts:['Диаметр 25–30 см','Манго, курага 3-х видов, чернослив, хурма, грецкий орех, киви','Тематический топер в подарок']},
+    {id:'buket-35', cat:'gift', name:'Букет из сухофруктов', price:6000, vk:'buket-iz-sukhofruktov-215400490-13255886', facts:['Диаметр 35–40 см','Манго, хурма, финики, киви, помело, груша, инжир, чернослив, курага 3-х видов','Тематический топер в подарок']},
+    {id:'buket-sumochka', cat:'gift', name:'Букет из сухофруктов в сумочке', price:1500, vk:'buket-iz-sukhofruktov-v-sumochke-215400490-13255876', facts:['Сумочка 12×12×12','Манго, грецкий орех, ананас, хурма, курага 3-х видов, чернослив, киви']},
+    {id:'buket-podsolnukh', cat:'gift', name:'Букет из сухофруктов «Подсолнух»', price:1500, vk:'buket-iz-sukhofruktov-quotpodsolnukhquot-215400490-13255779', facts:['Манго, чернослив','Цвет упаковки и топера — на ваш вкус']},
+    {id:'pryanik-5', cat:'gift', name:'Пряник «Учись на отлично»', price:180, vk:'pryanik-quotuchis-na-otlichnoquot-215400490-13255761', facts:['Ароматный пряник в форме «5»']},
+    {id:'mk-8-marta', cat:'mk', name:'Выездной мастер-класс «Ветка мимозы»', price:350, unit:'с человека', vk:'master-klass-quot8-martaquot-215400490-9862498', facts:['Возраст 5+, до 45 минут','Группы от 10 человек, от 20 — скидка 10%']},
+    {id:'mk-23-fevralya-vyezd', cat:'mk', name:'Выездной мастер-класс «Самолёт»', price:350, unit:'с человека', vk:'master-klass-23-fevralya-215400490-9849262', facts:['Пряник 10×10 см, возраст 5+','Группы от 10 человек, от 20 — скидка 10%']},
+    {id:'mk-golub-mira', cat:'mk', name:'Мастер-класс «Голубь мира»', price:300, vk:'master-klass-quotgolub-miraquot-215400490-10294601', facts:['Пряник с контуром, глазурь двух цветов, посыпка','Наклейки в подарок']},
+    {id:'mk-osenniy-les', cat:'mk', name:MKP+'«Осенний лес»', price:450, vk:'master-klass-po-rospisi-pryanikov-osenniy-les-215400490-13605485', facts:['3 пряника: ёжик/лиса и 2 осенних листика','Глазурь 3-х цветов, подарочная коробка']},
+    {id:'mk-snezhny-shar', cat:'mk', name:MKP+'«Снежный шар и ёлочный шар»', price:500, vk:'master-klass-po-rospisi-pryanikov-snezhny-shar-i-yolochny-shar-215400490-13598727', facts:['2 пряника, глазурь 2-х цветов','Сахарные посыпки, подарочная коробка']},
+    {id:'mk-boroda', cat:'mk', name:MKP+'«Борода Деда Мороза»', price:500, vk:'master-klass-po-rospisi-pryanikov-boroda-deda-moroza-215400490-13598811'},
+    {id:'mk-yolka', cat:'mk', name:MKP+'«Новогодняя ёлка»', price:350, vk:'master-klass-po-rospisi-pryanikov-novogodnyaya-yolka-215400490-13598765'},
+    {id:'mk-yolochka', cat:'mk', name:MKP+'«Ёлочка» (для малышей)', price:300, vk:'master-klass-po-rospisi-pryanikov-yolochka-dlya-malyshey-215400490-13598751'},
+    {id:'mk-varezhki', cat:'mk', name:MKP+'«Варежки»', price:500, vk:'master-klass-po-rospisi-pryanikov-varezhki-215400490-13598691'},
+    {id:'mk-23-fevralya-pryanik', cat:'mk', name:MKP+'«23 февраля»', price:500, vk:'master-klass-po-rospisi-pryanikov-23-fevralya-215400490-13598680'},
+    {id:'mk-shkola', cat:'mk', name:MKP+'«Школа»', price:500, vk:'master-klass-po-rospisi-pryanikov-shkola-215400490-13598627'},
+    {id:'mk-morozhenoe', cat:'mk', name:MKP+'«Мороженое и пончик»', price:500, vk:'master-klass-po-rospisi-pryanikov-morozhenoe-i-ponchik-215400490-13598613'},
+    {id:'mk-instrumenty', cat:'mk', name:MKP+'«Инструменты»', price:500, vk:'master-klass-po-rospisi-pryanikov-instrumenty-215400490-13598459'},
+    {id:'mk-trener', cat:'mk', name:MKP+'«Тренер»', price:500, vk:'master-klass-po-rospisi-pryanikov-trener-215400490-13598388'},
+    {id:'mk-dedulya', cat:'mk', name:MKP+'«Дедуля»', price:500, vk:'master-klass-po-rospisi-pryanikov-dedulya-215400490-13598378'},
+    {id:'mk-babulya', cat:'mk', name:MKP+'«Бабуля»', price:500, vk:'master-klass-po-rospisi-pryanikov-babulya-215400490-13598366'},
+    {id:'mk-papa', cat:'mk', name:MKP+'«Папа ❤️»', price:500, vk:'master-klass-po-rospisi-pryanikov-papa1008465039-215400490-13598344'},
+    {id:'mk-mama', cat:'mk', name:MKP+'«Мама ❤️»', price:500, vk:'master-klass-po-rospisi-pryanikov-mama1008465039-215400490-13598332'}
+  ];
+  // Страховка: если фото не загрузилось — бежевая заглушка с иконкой торта (без стока)
+  var FALLBACK = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500"><rect width="400" height="500" fill="#f3e8d2"/><g fill="none" stroke="#c9a85a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" transform="translate(130 170) scale(5.8)"><path d="M4 21h16M5 21v-6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6"/><path d="M5 17c1.5 1 3 1 4.5 0s3-1 4.5 0 3 1 5 0"/><path d="M12 13V9"/></g></svg>');
+  // Резерв: те же фото Елены с серверов ВКонтакте (её карточки товаров), не сток
+  var VKIMG = {"tort-edinorog":"https://sun9-53.userapi.com/s/v1/ig2/t3U3E7e_poCB4PLsiqcidit27qNIXLGC4365HLAodaz_qMQYsLa_I21ESeLGuo4OYVSMrwLfkNz5uRkcUrkyj8EL.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&u=Xo5We2GWCjCKJS3-1Hl31Ux_ZZ4_BAJfeGUxj4H6ehs&cs=720x0",
+    "tort-mishka":"https://sun9-71.userapi.com/s/v1/ig2/-cDn38kEUpSOoE9BMMi7663bqVf7EJ3QeWFFhROZeVVJgyUAhD6DqVO9EJ5xFSaioMkYnBOq0twsuiGFVmookie0.jpg?quality=95&as=32x39,48x59,72x89,108x133,160x197,240x296,360x443,480x591,540x665,640x788,720x887,1080x1330&from=bu&u=cc4cdtyTn9sk6cwwMuQri2XWpJySi4EhVfzXXNWO9ME&cs=720x0",
+    "tort-garri-poter":"https://sun9-77.userapi.com/s/v1/ig2/BTNaus3HI9xcc59jrtwPKW_Tilb8coVDlBXUp8XGjwF9XHKuMq9ey43ao4HGhPgj5iZjFK6DSo7M3i2LWbxxDqsa.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&u=auGliOcVV2O7-sek4Ecu0MBxzFtYEK6WzEbNKjqUdhY&cs=720x0",
+    "tort-malenkiy-prints":"https://sun9-55.userapi.com/s/v1/ig2/Wy6HEOtQgArXdlzgvyn7Q4hDEyzFV21qfQL2TnRac6FFkTYHhkiCwv7v_BYVQouK-GJv-kUDOfjiYMjzBu7IYOH9.jpg?quality=95&as=32x34,48x50,72x75,108x113,160x168,240x252,360x377,480x503,540x566,640x671,720x755,1080x1132&from=bu&u=ZF1iEqp4M-YRrIVzs_d-CfivFd_60JsXLfUfuDpqKNE&cs=720x0",
+    "bento":"https://sun9-7.userapi.com/s/v1/ig2/JgTLpg3S5ThAPGlNiBpC_aMlCMUs9jE-PqtbdDdFmFi2M2NZxgWiG21HU2SIbbFxlZW-Cvy0zbHRUDDQfnJeWNfO.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1280x1280,1440x1440,2560x2560&from=bu&u=d8g1sChny9240IR714habx-f9iyQ2mB29TDgMZeRtVk&cs=720x0",
+    "kapkeyki":"https://sun9-8.userapi.com/s/v1/ig2/KRtgXT5PR97o3YfcXbKoqNhajo1TiUW_3NyHEDfS21ITtP5Ke3LC8wWpQakR9QfgTsCkZQuvFVH4m1tF9Yl3fMgp.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080&from=bu&u=mHXJwhrYghI3wdOHNFHzI64rJT4T1eGvNeRFhrPXhUA&cs=720x0",
+    "trayfly":"https://sun9-39.userapi.com/s/v1/ig2/6_juLIHmFRQCqgG9WNB_h9IwSFj0BC8sBsc1UWUwoiCv5rNC62H_9RBuKPnpxubtPP-DfWa227HcqxjnGEgE5Dvi.jpg?quality=95&as=32x41,48x62,72x92,108x138,160x205,240x308,360x461,480x615,540x692,640x820,720x923,1080x1384,1280x1641,1440x1846,1997x2560&from=bu&u=VnIuYdyfgWbkH6juU1bRE1-IT_Nlsus-AZbX2kNDbgw&cs=720x0",
+    "pryanik-5":"https://sun9-53.userapi.com/s/v1/ig2/O0XVRVzKCBwDUFRaHIHnU8Wzxmp_Z5kjagUw_yDTKwWSMC84oiiYJZee-I6Z3mKH6ZskVZ-KGEgcDh0dzzsdUNMu.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&u=7ulDBRSrYJ9JydvQ_-NH68YGyOBBOru-B7L5sw5UcT8&cs=720x0",
+    "buket-s":"https://sun9-53.userapi.com/s/v1/ig2/6PPKDIw5aasmPDZRGU5xIN1lxb1uCmCgI7bGehwC7gTYU2g8AK8p1wWeUtW3VafDvVBToDA7thW_4YYWCoMAj46n.jpg?quality=95&as=32x46,48x69,72x103,108x155,160x230,240x345,360x517,480x690,540x776,640x920,720x1035,1080x1552,1280x1840,1440x2070,1781x2560&from=bu&u=pvCUTw5EZJQzVwfqlYOuqRJix2C6zqr0Y2IIeoH-jTY&cs=720x0",
+    "buket-25":"https://sun9-70.userapi.com/s/v1/ig2/VKqbwAFt1pJQ4NVy-plne_HRVTCS0dKeJUTB36tqBI5BNuudKH7lwtb_Ouct-ToSCM26V9yqwWbYm-BKyim5lz4g.jpg?quality=95&as=32x57,48x86,72x128,108x193,160x285,240x428,360x642,480x856,540x963,640x1141,718x1280&from=bu&u=lK3Wnf6GiyiVPxZnmjP8Nv_DY1oXvD09Vh84C89UJ3Q&cs=718x0",
+    "buket-35":"https://sun9-70.userapi.com/s/v1/ig2/ehA2LhPbCpLYUmUyz6TrngsO9W2yOM-h3IPWNEhc98KNAvBkdUBoWsXqHdq3tI8M9QfuR25tLV9FF1qxqNON0oNA.jpg?quality=95&as=32x39,48x59,72x89,108x133,160x197,240x296,360x444,480x592,540x666,589x726&from=bu&u=XQjjVHPLm7BuKeorvB42pYaLcYku4HXQ4XheEcFJgJ0&cs=589x0",
+    "buket-sumochka":"https://sun9-65.userapi.com/s/v1/ig2/RQcGKvailn1YwnB28axYdgzclp9vfC21_QUgbFZO_CoIzMP8-tOrcgbvUdpU8yOz-Bw_o5Kqzu1PqYaS95xIgmoa.jpg?quality=95&as=32x57,48x86,72x128,108x193,160x285,240x428,360x642,480x856,540x963,640x1141,718x1280&from=bu&u=GckADJzQZP8zWdzTaBWI75W09TH4LoNnuM3YIlYpfvw&cs=718x0",
+    "buket-podsolnukh":"https://sun9-38.userapi.com/s/v1/ig2/i0tokNugifdX-0wqDh5BI2PzYYazIuqywuxDi1gm5_nMWxnOy4KDECNY3X11TJt45Ay_8yaFAKSzJ5rBdDjNVISf.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&u=zMOjmYbvgnbE-71zOgZ6C6A-_m_7kBAnq9CFYQG0-4o&cs=720x0",
+    "mk-osenniy-les":"https://sun9-49.userapi.com/s/v1/ig2/ksqPiOT_rInYCAYIsPHl9TFwCdOZGH3XMdcixlXDxTlvb700aJ1DlWfuh3qk-uAeJr-jQqdJDOA1poYZ6nw_KmJB.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x639,720x719,1080x1079,1280x1279&from=bu&u=VsmrKJjEQDqbqKYyuindwtcpBW15Kg5LORKJS3s20PA&cs=720x0",
+    "mk-boroda":"https://sun9-8.userapi.com/s/v1/ig2/7b7ymMXMIlqKaYTsIKcrhrY3yjPCMSLJe1AovtlJq7hqJigHzq32_gB29hVBl9NgYN88kgKH6kjFtiRj_R9YZ9Pi.jpg?quality=95&as=32x45,48x68,72x102,108x153,160x226,240x339,360x508,480x678,514x726&from=bu&u=L3v2E1hzJSCOG9N6F1w106ikPPuI_z_WFIL5Sa7H_tY&cs=514x0",
+    "mk-yolka":"https://sun9-39.userapi.com/s/v1/ig2/Nbyu_CNc9r3txRhBNzW-WjLMlgYxA82owmneZLdsyxV-YkaIc-uOrhquNizwWTdlvFELR-cMfwc6GZslUuKJM6M8.jpg?quality=95&as=32x39,48x59,72x88,108x132,160x196,240x294,360x441,480x588,540x661,640x784,664x813&from=bu&u=z2l2IUy3RkYw09849jZ9tjnaSigJWreWz-qN22i1urM&cs=664x0",
+    "mk-yolochka":"https://sun9-83.userapi.com/s/v1/ig2/5ck9tZo281qys7A-5Z2IxZoEdfVcAO5U13Wn3fa5ZKnePg6Mo2KQ08m_fFZvWt5QN8YLb9zZlRSefjJqtZ9edkg6.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,960x1280&from=bu&u=QCij6PLFx_znxE6sSMaZ9dQTlEqK6lveD09GntzO3js&cs=720x0",
+    "mk-snezhny-shar":"https://sun9-80.userapi.com/s/v1/ig2/CtyWSsZvUnKsBLHldSTAvpZRhcrLOqbyRHyCL6Rzp7G-_k4aURo-o4HdDMbDg6fD2xthPac9InleZcwmihcrI8-j.jpg?quality=95&as=32x33,48x49,72x74,108x110,160x163,240x245,360x368,480x490,540x552,640x654,720x736,1080x1103,1253x1280&from=bu&u=bDd8Ru4i5dglqE56ZDUk4A41Ep1Krsa551ltCbPQ95I&cs=720x0",
+    "mk-varezhki":"https://sun9-15.userapi.com/s/v1/ig2/FoHxnj2meIfYkqeeV9_MWk-kHyI29eEuqZDjxO_3KTCXCs2qhy1ZChwGZUv4mnQ6C6Iq8jmh4baf9cpMFGhmln5O.jpg?quality=95&as=32x29,48x44,72x65,108x98,160x145,240x218,360x327,480x436,540x491,640x582,720x655,1080x982,1280x1164&from=bu&u=5SZee4DfMDXKHJi4-hSnGUPcUXhu1CK7ptChyc8AcOU&cs=720x0",
+    "mk-23-fevralya-pryanik":"https://sun9-52.userapi.com/s/v1/ig2/e8u6rnB9HSfclUfU2c6qzJ9B2Irk11qScWERLDzpCEvI0vCAmt5Lx7MDYgdOUNHtGpe1RhJ-7RQqEq_v87jf13V2.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1280x1280&from=bu&u=87r0OtOm2yegXQfurP1dzM964oDTICpqxiKnAc0Chzo&cs=720x0",
+    "mk-shkola":"https://sun9-40.userapi.com/s/v1/ig2/rTOJxMeFui90o1LXnraRZhE6SbfsXza86xYKu3dL7QUizsUI4fJXB9cVf4XHyLkjvHCU2VX8s-QVzbT3PnlqnbST.jpg?quality=95&as=32x32,48x48,72x72,108x109,160x161,240x242,360x363,480x483,540x544,640x645,720x725,1080x1088,1271x1280&from=bu&u=mXqpDbE89GI45D3lfHT6G15NTuLkgqEnDKC49k0Gv1c&cs=720x0",
+    "mk-morozhenoe":"https://sun9-6.userapi.com/s/v1/ig2/pTffF8_VAFKsxbYAwZ2fKuH375cQebcxAl1iA0O5fJmxNQ5PJHp9l2bIuP6f8eoxc7wWHYBIOTxM8IyfP0buHfS-.jpg?quality=95&as=32x33,48x49,72x74,108x111,160x165,240x247,360x371,480x495,540x556,640x660,720x742,1080x1113&from=bu&u=Jkw1Xh76EZQ-jl4CAn9V2moIh4EiNqfrKdpxqMbWp-c&cs=720x0",
+    "mk-instrumenty":"https://sun9-51.userapi.com/s/v1/ig2/r2-oG3WbCZ4dIWtecBjw5Yt43pRL5zif0fPxhmeJXsubAhCwyg8gZH5CsTcL1TYydjoLRYYG7MkXSUNAU7_GuaQQ.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080&from=bu&u=9LBljISfUIWBPkbLsDyUStIuJdp8gCDJMBSB5kUOUEY&cs=720x0",
+    "mk-trener":"https://sun9-77.userapi.com/s/v1/ig2/rEZQo0AucktlbaQGgVdeA1VPpSh9IgyYhg3vgo7ebxRA88kQDgMgc-C8smA1_jq-ZDdYaZb1q0k-Bxgi5OovA0X3.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1280x1280&from=bu&u=oL0T1hclZVN4GfMUY_HjNtXDJXTvZ3akgOvE1m4L6AI&cs=720x0",
+    "mk-dedulya":"https://sun9-56.userapi.com/s/v1/ig2/hgHSuWs6hgKYCclbMdJHV2zh7gJfLzhhY8aeQcPoUhn3yyk1rPl5XJNSts51hJSJEBQ0thwiq37IitBYMvrUPGv4.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,960x1280&from=bu&u=3DU-mAssgZmSXOga99wlTUdtjal0_o0n7cbMXrGsuTc&cs=720x0",
+    "mk-babulya":"https://sun9-55.userapi.com/s/v1/ig2/R1oH0B3a4_rzkK-6nP2XZmvpNWpC-ZJeoBCFcoBLvCWXnC9C0ODLkbfrm3ggIZ25-zf-DJX7ncyiOldY7TSht1vs.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,960x1280&from=bu&u=5WTzbFEs-b1Y-azWZTJSeA9HEevDqLR2TewEnUfqDUQ&cs=720x0",
+    "mk-papa":"https://sun9-4.userapi.com/s/v1/ig2/B8GYv6V00AnPt2mmtk4BEB6lFVCUycjvaJ60VVjOfoezmaLWfalF62a3WfndvLLMU1f2kklCNCbfqQT3gBz9GzOZ.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x241,360x361,480x481,540x541,640x642,720x722,1077x1080&from=bu&u=npUxxFyv_YMGU5QuH_wagW7-CFsQWoUFhwtja62ZYZs&cs=720x0",
+    "mk-mama":"https://sun9-64.userapi.com/s/v1/ig2/CheuVMwHydZlel6bAgHLA9YqkT8dJjVoilmvHruopiRFNvCGjBMUz3ouRKDYDZTLIrIEwqmZ0PCAW4AsmddKgP26.jpg?quality=95&as=32x34,48x51,72x76,108x114,160x169,240x253,360x380,480x507,540x570,640x675,720x760,1080x1140,1213x1280&from=bu&u=Gin8Rc6HWPT8XjEba6C-fv_fK5elwFNxl1gC-fIlC0Y&cs=720x0",
+    "mk-golub-mira":"https://sun9-4.userapi.com/s/v1/ig2/Iwr9amHZVqsFKuVQ3MbN1nheL1804dYS95omZi0smsDsZ0falYyix136ZNOXzB4rplW3yRUl9R6CcjkjyHefGlfp.jpg?quality=95&as=32x43,48x64,72x96,108x144,160x213,240x320,360x480,480x640,540x720,640x853,720x960,1080x1440,1280x1707,1440x1920,1920x2560&from=bu&u=FO_-Rb3R9sVkcFfDlRxHpSaLwz7ZJYUDo-GA6Y1xA7Q&cs=720x0",
+    "mk-8-marta":"https://sun9-80.userapi.com/s/v1/ig2/RA8xdtkm7qpMaXiE5GK6Q26BDdBg3BLDOFW53mUQEVhXhbNjhBc5lgz_FFRre88198IErGjHdBpl8-TZgTJTtCHz.jpg?quality=95&as=32x42,48x64,72x96,108x143,160x212,240x319,360x478,480x637,540x717,640x850,720x956,1080x1434,1280x1700,1440x1912,1928x2560&from=bu&u=Ib8KHmxUQheqqmDimZEtWFOy6JHJkuG9yklLqA4knOs&cs=720x0",
+    "mk-23-fevralya-vyezd":"https://sun9-82.userapi.com/s/v1/ig2/MRdLuIFiuhnqJ2X0aNFUCOJ6nTpoQocWTv9ki2fyiDURYJs_687xOe18nPIA9CpewV_jzOqqKifqJsEqX6TkHoBX.jpg?quality=95&as=32x24,48x36,72x54,108x81,160x120,240x180,360x270,480x360,540x405,640x480,720x540,1080x810,1280x960,1440x1080,2560x1920&from=bu&u=1M5FLqfraa4ZT_bkD6-6Ve8WvQNXC7o4TfGFRd25aaA&cs=720x0"};
+  document.addEventListener('error', function(e){
+    var t = e.target;
+    if(!t || t.tagName !== 'IMG' || t.classList.contains('slice-photo') || t.src.indexOf('data:') === 0) return;
+    t.removeAttribute('srcset');
+    var id = t.getAttribute('data-id');
+    if(id && VKIMG[id] && !t.getAttribute('data-vk')){ t.setAttribute('data-vk','1'); t.src = VKIMG[id]; }
+    else t.src = FALLBACK;
+  }, true);
+  var src = function(id){ return 'img/'+id+'.jpg'; }, sm = function(id){ return 'img/'+id+'-sm.jpg'; };
+  var srcset = function(id){ return sm(id)+' 360w, '+src(id)+' 900w'; };
+
+  var fmt = new Intl.NumberFormat('ru-RU');
+  var rub = function(n){ return fmt.format(Math.round(n)) + ' ₽'; };
+  var kg = function(w){ return String(w).replace('.', ','); };
+  var $ = function(id){ return document.getElementById(id); };
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  document.querySelectorAll('.js-order').forEach(function(a){ a.href = VK_URL; });
+  $('vkFoot').href = VK_URL; $('marketLink').href = MARKET_URL;
+
+
+  // Catalog
+  var counts = {all:ITEMS.length}; ITEMS.forEach(function(it){ counts[it.cat] = (counts[it.cat]||0) + 1; });
+  var chips = [['all','Все']].concat(Object.keys(CATS).map(function(k){ return [k, CATS[k]]; }));
+  $('chips').innerHTML = chips.map(function(c,i){
+    return '<button type="button" class="chip" data-cat="'+c[0]+'" aria-pressed="'+(i===0)+'">'+c[1]+'<b>'+counts[c[0]]+'</b></button>';
+  }).join('');
+  $('catalog').innerHTML = ITEMS.map(function(it){
+    var facts = (it.facts||[]).map(function(f){ return '<li>'+f+'</li>'; }).join('');
+    var build = it.design!==undefined ? '<button class="cat-btn" type="button" data-design="'+it.design+'">Собрать в конструкторе</button>' : '';
+    return '<article class="cat-card" data-cat="'+it.cat+'">'+
+      '<img data-id="'+it.id+'" src="'+src(it.id)+'" srcset="'+srcset(it.id)+'" sizes="(max-width:340px) 92vw, (max-width:700px) 46vw, (max-width:900px) 31vw, 270px" alt="'+it.name.replace(/"/g,'&quot;')+'" width="900" height="1125" loading="lazy">'+
+      '<div class="cat-body"><div class="cat-tag">'+CATS[it.cat]+'</div><h3>'+it.name+'</h3>'+
+      '<div class="cat-price">'+rub(it.price)+(it.unit ? ' <small>'+it.unit+'</small>' : '')+'</div>'+
+      (facts ? '<ul class="facts">'+facts+'</ul>' : '<div style="height:12px"></div>')+
+      '<div class="cat-actions">'+build+'<a class="cat-btn'+(build?' ghost':'')+'" href="'+PRODUCT(it.vk)+'" target="_blank" rel="noopener">Смотреть в ВК</a></div></div></article>';
+  }).join('');
+  $('chips').addEventListener('click', function(e){
+    var b = e.target.closest('.chip'); if(!b) return;
+    var cat = b.getAttribute('data-cat');
+    $('chips').querySelectorAll('.chip').forEach(function(c){ c.setAttribute('aria-pressed', c===b); });
+    $('catalog').querySelectorAll('.cat-card').forEach(function(card){ card.hidden = cat!=='all' && card.getAttribute('data-cat')!==cat; });
+  });
+  $('catalog').addEventListener('click', function(e){
+    var b = e.target.closest('[data-design]'); if(!b) return;
+    if(window.CakeCalc) CakeCalc.selectDecor(+b.getAttribute('data-design'));
+    $('builder').scrollIntoView({behavior: reduce ? 'auto' : 'smooth'});
+  });
+
+  // Дата и адрес добавляются в текст заказа калькулятора (app.js)
+  window.CAKE_ORDER_EXTRA = function(){
+    var a = $('addrForm').elements;
+    var v = function(n){ return (a[n].value || '').trim(); };
+    var date = v('date'), dateText = '';
+    if(date){ var p = date.split('-'); dateText = new Date(+p[0], +p[1]-1, +p[2]).toLocaleDateString('ru-RU', {day:'numeric', month:'long', weekday:'short'}); }
+    var addr = [v('street'), v('house') && 'д. '+v('house'), v('flat') && 'кв. '+v('flat'),
+                v('entrance') && 'подъезд '+v('entrance'), v('intercom') && 'домофон '+v('intercom')].filter(Boolean).join(', ');
+    return (dateText ? '• Нужен к: ' + dateText + '\n' : '') + '• Доставка по Иваново' + (addr ? ': ' + addr : '');
+  };
+  (function(){
+    var t = new Date(), pad = function(n){ return (n<10?'0':'')+n; };
+    $('orderDate').min = t.getFullYear()+'-'+pad(t.getMonth()+1)+'-'+pad(t.getDate());
+  })();
+  document.querySelectorAll('.js-order').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if(window.CakeCalc) CakeCalc.copy(function(){
+        document.querySelectorAll('.js-toast').forEach(function(t){ t.textContent = 'Параметры заказа скопированы ✓'; });
+      });
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
